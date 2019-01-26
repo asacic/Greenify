@@ -1,2 +1,5 @@
-<app-park></app-park>
-
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+<div *ngFor="let feature of features">
+    <app-park [coordinates]="feature.geometry.coordinates"></app-park>
+</div>
+</agm-map>

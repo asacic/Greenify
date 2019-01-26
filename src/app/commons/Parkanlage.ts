@@ -1,7 +1,7 @@
 
 export interface Geometry {
     type: string;
-    coordinates: number[];
+    coordinates: Coordinates[];
 }
 
 export interface Properties {
@@ -52,5 +52,10 @@ export interface Parkanlagen {
     type: string;
     totalFeatures: number;
     features: Feature[];
+}
+
+export interface Coordinates {
+	lat: number;
+	lon: number;
 }
 
