@@ -48,7 +48,7 @@ export interface Feature {
     properties: Properties;
 }
 
-export interface Parkanlage {
+export interface Parkanlagen {
     type: string;
     totalFeatures: number;
     features: Feature[];
