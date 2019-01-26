@@ -13,7 +13,16 @@ export class ParkServiceService {
 
   getAllFeatures(): Observable<Feature[]> {
 
-    return this.http.get<Feature[]>("/greenify_war_exploded/api/getText?arg1=0");
+    //return this.http.get<Feature[]>("/greenify_war_exploded/api/getHundezone?hz=0");
+    return this.http.get<Feature[]>("/greenify_war_exploded/api/getHundezone?hz=1");
+    //return this.http.get<Feature[]>("/greenify_war_exploded/api/getSpielplatz?sp=0");
+    //return this.http.get<Feature[]>("/greenify_war_exploded/api/getSpielplatz?sp=1");
+    //return this.http.get<Feature[]>("/greenify_war_exploded/api/getWC?wc=0");
+    //return this.http.get<Feature[]>("greenify_war_exploded/api/getWC?wc=1");
+    //return this.http.get<Feature[]>("/greenify_war_exploded/api/getLokal?lokal=0");
+    //return this.http.get<Feature[]>("/greenify_war_exploded/api/getLokal?lokal=1");
+  
+    //return this.http.get<Feature[]>("/greenify_war_exploded/api/getHundezone?hz=1");
   }
   
 }
