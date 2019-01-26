@@ -2,4 +2,5 @@
 <div *ngFor="let feature of features">
     <app-park [coordinates]="feature.geometry.coordinates"></app-park>
 </div>
+<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>

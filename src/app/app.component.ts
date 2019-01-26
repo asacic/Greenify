@@ -22,13 +22,13 @@ export class AppComponent {
       console.log(x);
       this.features = x
     });
-    /*if (navigator.geolocation) {
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
         this.lat=position.coords.latitude;
         this.lng=position.coords.longitude;
       });
     } else {
       alert("Geolocation is not supported by this browser.");
-    }*/
+    }
   }
 }
