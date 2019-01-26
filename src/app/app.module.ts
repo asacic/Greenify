@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 import { ParkComponent } from './park/park.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { ParkComponent } from './park/park.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyARmJOK4ppjJjhYVhxP-JgbqB6Kt4FCB6A'
     })
