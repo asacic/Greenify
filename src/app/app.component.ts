@@ -3,7 +3,7 @@ import { ParkServiceService } from './services/park-service.service';
 import { Feature } from './commons/Parkanlage';
 import { ActivatedRoute } from '@angular/router';
 import { LocalPositionService } from './services/local-position.service';
-
+declare var google: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -31,7 +31,6 @@ export class AppComponent {
   lokale_clicked(){
     this.filtered_features = this.features.filter(x => x.properties.O_LOKAL == 1);
   }
-
   wc_clicked(){
     this.filtered_features = this.features.filter(x => x.properties.Q_WC == 1);
   }
@@ -53,6 +52,13 @@ export class AppComponent {
       if (params["special_infrastructure"]) {
         this.special_infrastructure = params["special_infrastructure"];
         this.parkService.getAllFeatures(this.special_infrastructure).subscribe(x => {
+          this.features = x
+          this.filtered_features = x;
+        });
+        
+      }
+      else {
+        this.parkService.getAllFeatures("wc").subscribe(x => {
           this.features = x
           this.filtered_features = x;
         });
