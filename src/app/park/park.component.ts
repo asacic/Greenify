@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { LatLngLiteral } from '@agm/core';
-import { ParkServiceService } from '../park-service.service';
 import { Coordinates } from '../commons/Parkanlage';
 import { GMCoordinates } from '../commons/GMCoordinates';
 @Component({
