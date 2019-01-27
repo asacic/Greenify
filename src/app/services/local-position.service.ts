@@ -1,7 +1,7 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { GMCoordinates } from './commons/GMCoordinates';
+import { GMCoordinates } from '../commons/GMCoordinates';
 
 @Injectable({
   providedIn: 'root'

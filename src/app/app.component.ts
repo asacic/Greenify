@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ParkServiceService } from './park-service.service';
+import { ParkServiceService } from './services/park-service.service';
 import { Feature } from './commons/Parkanlage';
 import { ActivatedRoute } from '@angular/router';
-import { LocalPositionService } from './local-position.service';
+import { LocalPositionService } from './services/local-position.service';
 
 @Component({
   selector: 'app-root',

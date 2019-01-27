@@ -1,7 +1,7 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Feature } from './commons/Parkanlage';
+import { Feature } from '../commons/Parkanlage';
 
 @Injectable({
   providedIn: 'root'
