@@ -15,13 +15,9 @@ export class ParkComponent implements OnInit {
   paths: LatLngLiteral[] = [];
   @Input() coordinates: Coordinates[];
 
-  constructor(private parkService: ParkServiceService) { }
-
   ngOnInit() {
-    console.log(this.coordinates);
     this.coordinates.forEach(element => {
       this.paths.push(new GMCoordinates(element.lat, element.lon));
     });
-    console.log("path lat" + this.paths[0].lat);
   }
 }
