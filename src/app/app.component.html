@@ -1,0 +1,18 @@
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [mapTypeControl]="true" (mapReady)="mapReady($event)">
+    <button class="btn" id="Lokale" (click)="lokale_clicked()">
+        Lokale
+    </button>
+    <button class="btn" id="WC" (click)="wc_clicked()">
+        WCs
+    </button>
+    <button class="btn" id="Hundezone" (click)="hundezone_clicked()">
+        Hundezonen
+    </button>
+    <button class="btn" id="Spielplatz" (click)="spielplatz_clicked()">
+        Spielplätze
+    </button>
+    <div *ngFor="let feature of filtered_features">
+        <app-park [coordinates]="feature.geometry.coordinates"></app-park>
+    </div>
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
