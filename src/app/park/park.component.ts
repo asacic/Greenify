@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { LatLngLiteral } from '@agm/core';
 import { Coordinates } from '../commons/Parkanlage';
 import { GMCoordinates } from '../commons/GMCoordinates';

@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyARmJOK4ppjJjhYVhxP-JgbqB6Kt4FCB6A'
+      apiKey: ''
     }),
     RouterModule.forRoot([])
   ],
